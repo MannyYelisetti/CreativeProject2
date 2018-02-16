@@ -1,0 +1,100 @@
+
+li {
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+}
+
+ul {
+    font-family: 'Quicksand', sans-serif;
+    list-style-type: none;
+    margin: -10;
+    padding: 0;
+    overflow: hidden;
+    background-color: #A3ADB5;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: purple;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: purple;
+}
+
+.active {
+    background-color: #41D5F3;
+}
+.container{
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "push push"
+	    "main main"
+        "footer footer";
+    /*  The gutters between each grid cell will be 60 pixels. */
+    grid-gap: 65px;
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    font-family: fantasy;
+    height: 70px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+.header h1 {
+    color: black;
+}
+
+body{
+
+    background-color: white;
+    font-family: 'Dosis', sans-serif;
+
+}
+
+#weatherdiv {
+	grid-area: main;
+    text-align: center;
+}
+.push {
+    grid-area: push;
+	padding-bottom: 5%;
+}
+
+.footer{
+    grid-area: footer;
+    text-align: center;
+    color: #FFF173;
+}
+
+.pushfooter {
+	padding-bottom: 20%;
+}
+body{
+	border: 20px solid #bdc3c7;
+	width: 80%;
+	margin: 10px auto;
+	padding: 20px;
+	font-family: PT Sans;
+	background-color: #4CC8E4;
+}
+p{
+  font-family: cursive;
+}
+img {
+
+    border-radius: 1px;
+    padding: 25px;
+    width: 650px;
+}
